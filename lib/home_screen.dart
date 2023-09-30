@@ -33,24 +33,26 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: colorWhite,
       appBar: appBar(),
-      body: ListView(
-        children: [
-          Row(
-            children: [
-              genderMaleSection(),
-              genderFemaleSection(),
-            ],
-          ),
-          heightCard(),
-          Row(
-            children: [
-              weightSection(),
-              ageSection(),
-            ],
-          ),
-        ],
+      body: SafeArea(
+        child: ListView(
+          children: [
+            Row(
+              children: [
+                genderMaleSection(),
+                genderFemaleSection(),
+              ],
+            ),
+            heightSection(),
+            Row(
+              children: [
+                weightSection(),
+                ageSection(),
+              ],
+            ),
+          ],
+        ),
       ),
       bottomNavigationBar: GestureDetector(
         onTap: () {
@@ -185,7 +187,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Card heightCard() {
+  Card heightSection() {
     return Card(
       margin: REdgeInsets.symmetric(horizontal: 16),
       elevation: 3,

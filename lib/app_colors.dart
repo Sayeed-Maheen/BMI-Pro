@@ -7,6 +7,7 @@ const colorContainer2 = Color(0xff8ECDDD);
 const colorContainer3 = Color(0xffB0D9B1);
 const colorFemaleBorder = Color(0xffD988B9);
 const colorMaleBorder = Color(0xff8EACCD);
+const colorSplashBG = Color(0xff112946);
 
 const colorGradientStart1 = Color(0xffc0a7d9);
 const colorGradientEnd1 = Color(0xff9D76C1);
